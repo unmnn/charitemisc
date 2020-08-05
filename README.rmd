@@ -1,0 +1,31 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# charitemisc
+
+Miscellaneous helper functions for the Charité tinnitus data.
+
+## Installation
+
+```{r installation, eval=FALSE}
+remotes::install_github("unmnn/charitemisc")
+```
+
+## Usage
+
+```{r usage, message=FALSE}
+library(charitemisc)
+library(dplyr)
+library(purrr)
+data_dict
+
+var <- "adsl_adsl01"
+data_dict %>% filter(item == var) %>% pull(description)
+data_dict %>% filter(item == var) %>% pluck("values", 1)
+```
+
