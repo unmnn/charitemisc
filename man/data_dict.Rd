@@ -28,7 +28,7 @@ A data frame with descriptions for every variable in the Charite tinnitus
 questionnaire data.
 }
 \details{
-Note: As of 03.08.2020, english descriptions of variables of the following
+Note: As of 17.08.2020, english descriptions of variables of the following
 questionnaires are available: meta, acsa, adsl, bi, bsf, isr, phq, psq, sozk,
 sf8, tq, tinskal, tlq.
 
