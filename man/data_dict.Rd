@@ -3,7 +3,7 @@
 \docType{data}
 \name{data_dict}
 \alias{data_dict}
-\title{Charite; tinnitus data dictionary.}
+\title{Charite tinnitus data dictionary.}
 \format{
 A data frame with 5 variables:
 \describe{

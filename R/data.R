@@ -1,4 +1,4 @@
-#' Charite; tinnitus data dictionary.
+#' Charite tinnitus data dictionary.
 #'
 #' A data frame with descriptions for every variable in the Charite tinnitus
 #' questionnaire data.
@@ -24,3 +24,7 @@
 #'
 #'
 "data_dict"
+
+#' Tinnitus patients data from Charite Universitaetsmedizin Berlin.
+#'
+"charite"

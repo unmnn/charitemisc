@@ -3,6 +3,9 @@
 
 Miscellaneous helper functions for the Charité tinnitus data.
 
+**Important:** The data themselves (`data/charite.rda`) are not uploaded
+to GitHub due to copyright reasons.
+
 ## Installation
 
 ``` r

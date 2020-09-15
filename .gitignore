@@ -37,3 +37,7 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# charite data
+Tinnitusgross_2015_11_Gesamt_ab_2011.xlsx
+charite.rda

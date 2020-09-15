@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^data-raw$
 ^README\.rmd$
+^make\.R$

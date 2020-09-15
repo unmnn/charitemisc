@@ -1,5 +1,7 @@
 ---
-output: github_document
+output: 
+  github_document:
+    html_preview: false
 ---
 
 ```{r setup, include=FALSE}
@@ -9,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 # charitemisc
 
 Miscellaneous helper functions for the Charité tinnitus data.
+
+**Important:** The data themselves (`data/charite.rda`) are not uploaded to GitHub due to copyright reasons. 
 
 ## Installation
 
