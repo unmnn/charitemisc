@@ -10,6 +10,7 @@ dd_stem <-
       ".jour_nr",     ".jour_nr",           "patient ID",
       ".group",       ".group",             "meta: group",
       ".phase",       ".phase",             "phase",
+      ".phase_seq",   ".phase_seq",         "chronological sequence of phases for the patient",
       ".testdatum",   "Date",               "testing date",
       ".day",         "testing_day",        "testing date: day of the month",
       ".weekday",     "testing_weekday",    "testing date: day of the week",

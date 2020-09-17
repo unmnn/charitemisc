@@ -3,3 +3,5 @@
 ^data-raw$
 ^README\.rmd$
 ^make\.R$
+^inst/docs$
+^R/filter_treated\.R$

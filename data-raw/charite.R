@@ -205,14 +205,29 @@ data$tlq <- data$tlq %>%
 # remove strongly redundant features ----
 data <- map(data, ~.x %>% select(-ends_with("100")))
 
-# save data as list object ----
-# data_as_list <- data
-# usethis::use_data(data_as_list, overwrite = TRUE)
+# add panic syndrome variable ----
+data$phqk <- data$phqk %>%
+  mutate(phqk_paniksyndrom = if_else(phqk_phqk_2a +
+                                       phqk_phqk_2b +
+                                       phqk_phqk_2c +
+                                       phqk_phqk_2d +
+                                       phqk_phqk_2e == 5, 1L, 0L),
+         .before = phqk_timestamp)
 
 # join tables ----
 pos_tinnitusfbg <- which(names(data) == "tq")
 data <- c(data[pos_tinnitusfbg], data[-pos_tinnitusfbg])
 df_data <- data %>% reduce(full_join, by = meta_cols_new)
+
+# remove underage patients ----
+df_data <- df_data %>% filter(.age >= 18)
+
+# for each patient, add sequence of phases ----
+df_data <- df_data %>%
+  arrange(.jour_nr, .testdatum, .phase) %>%
+  group_by(.jour_nr) %>%
+  mutate(.phase_seq = str_c(.phase, collapse = ""), .after = .phase) %>%
+  ungroup()
 
 # save data as tibble ----
 charite <- df_data

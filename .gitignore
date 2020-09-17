@@ -41,3 +41,8 @@ vignettes/*.pdf
 # charite data
 Tinnitusgross_2015_11_Gesamt_ab_2011.xlsx
 charite.rda
+
+# overview slides
+inst/
+
+filter_treated.R
