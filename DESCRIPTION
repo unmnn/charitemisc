@@ -13,3 +13,9 @@ RoxygenNote: 7.1.1
 Roxygen: list(markdown = TRUE)
 Suggests: 
     tidyverse
+Imports: 
+    dplyr,
+    rlang,
+    stringr,
+    tibble,
+    tidyr

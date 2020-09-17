@@ -5,7 +5,7 @@
 \alias{charite}
 \title{Tinnitus patients data from Charite Universitaetsmedizin Berlin.}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 6372 rows and 365 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 6355 rows and 367 columns.
 }
 \usage{
 charite
