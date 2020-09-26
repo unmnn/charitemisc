@@ -9,6 +9,7 @@
 #' that is closest to 7 days before the E recording (in case there are multiple
 #' A recordings for the same patient).
 #'
+#' @param df The `charite` data.
 #' @param tolerance The tolerable maximum number of days between an A recording
 #' and its corresponding E recording.
 #'
@@ -19,9 +20,8 @@
 #' @import dplyr
 #' @importFrom rlang .data
 #'
-filter_treated <- function(tolerance = 14L) {
-  charite <- utils::data("charite", envir = environment())
-  tmp <- charite %>%
+filter_treated <- function(df, tolerance = 14L) {
+  tmp <- df %>%
     tibble::rowid_to_column(".id") %>%
     select(.data$.id, .data$.jour_nr, .data$.testdatum, .data$.phase,
            .data$.phase_seq) %>%
