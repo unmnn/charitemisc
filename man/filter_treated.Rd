@@ -4,9 +4,11 @@
 \alias{filter_treated}
 \title{Extract the "legitimate" subset of patients who were treated}
 \usage{
-filter_treated(tolerance = 14L)
+filter_treated(df, tolerance = 14L)
 }
 \arguments{
+\item{df}{The \code{charite} data.}
+
 \item{tolerance}{The tolerable maximum number of days between an A recording
 and its corresponding E recording.}
 }

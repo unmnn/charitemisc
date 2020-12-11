@@ -51,7 +51,7 @@ filter_treated <- function(df, tolerance = 14L) {
     filter(.data$.a_final) %>%
     ungroup()
 
-  charite %>% slice(tmp$.id)
+  df %>% slice(tmp$.id)
 }
 
 
